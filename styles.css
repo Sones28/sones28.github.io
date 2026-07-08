@@ -424,10 +424,39 @@ h3 {
 }
 
 .contact-email {
+  display: inline-block;
   color: var(--teal-deep);
   font-weight: 850;
   text-decoration-color: rgba(18, 111, 104, 0.3);
   text-underline-offset: 4px;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+}
+
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--teal-deep);
+  font-weight: 850;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.profile-links a:hover,
+.profile-links a:focus-visible {
+  border-color: rgba(18, 111, 104, 0.45);
+  outline: 3px solid rgba(18, 111, 104, 0.14);
 }
 
 .contact-form {
