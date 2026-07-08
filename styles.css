@@ -233,6 +233,7 @@ h3 {
 .intro-section,
 .section,
 .split-section,
+.process-section,
 .learning-section,
 .contact-section {
   width: min(1120px, 88vw);
@@ -379,6 +380,55 @@ h3 {
 
 .about-copy p:last-child {
   margin-bottom: 0;
+}
+
+.process-section {
+  padding: 5.5rem 0 0;
+}
+
+.process-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.process-step {
+  min-height: 240px;
+  padding: 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.process-step span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.65rem;
+  border-radius: 8px;
+  color: #ffffff;
+  background: var(--teal-deep);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.process-step:nth-child(2) span {
+  background: var(--teal);
+}
+
+.process-step:nth-child(3) span {
+  background: var(--coral);
+}
+
+.process-step:nth-child(4) span {
+  color: var(--ink);
+  background: var(--yellow);
+}
+
+.process-step p {
+  margin-bottom: 0;
+  color: var(--muted);
 }
 
 .skills-section {
@@ -613,12 +663,14 @@ h3 {
 
   .intro-section,
   .split-section,
+  .process-section,
   .learning-section,
   .contact-section {
     grid-template-columns: 1fr;
   }
 
   .intro-stats,
+  .process-list,
   .project-grid,
   .learning-grid {
     grid-template-columns: 1fr;
@@ -664,6 +716,7 @@ h3 {
   .intro-section,
   .section,
   .split-section,
+  .process-section,
   .learning-section,
   .contact-section {
     width: min(100% - 2rem, 1120px);
@@ -671,6 +724,7 @@ h3 {
 
   .section,
   .skills-section,
+  .process-section,
   .learning-section,
   .split-section,
   .contact-section {
