@@ -233,6 +233,7 @@ h3 {
 .intro-section,
 .section,
 .split-section,
+.learning-section,
 .contact-section {
   width: min(1120px, 88vw);
   margin: 0 auto;
@@ -411,6 +412,52 @@ h3 {
   border-left-color: var(--yellow);
 }
 
+.learning-section {
+  padding: 5.5rem 0 0;
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.learning-item {
+  min-height: 220px;
+  padding: 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.learning-item span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1.1rem;
+  border-radius: 8px;
+  color: #ffffff;
+  background: var(--teal);
+  font-weight: 900;
+}
+
+.learning-item:nth-child(2) span {
+  background: var(--coral);
+}
+
+.learning-item:nth-child(3) span {
+  color: var(--ink);
+  background: var(--yellow);
+}
+
+.learning-item p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .contact-section {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
@@ -566,12 +613,14 @@ h3 {
 
   .intro-section,
   .split-section,
+  .learning-section,
   .contact-section {
     grid-template-columns: 1fr;
   }
 
   .intro-stats,
-  .project-grid {
+  .project-grid,
+  .learning-grid {
     grid-template-columns: 1fr;
   }
 
@@ -615,12 +664,14 @@ h3 {
   .intro-section,
   .section,
   .split-section,
+  .learning-section,
   .contact-section {
     width: min(100% - 2rem, 1120px);
   }
 
   .section,
   .skills-section,
+  .learning-section,
   .split-section,
   .contact-section {
     padding-top: 4rem;

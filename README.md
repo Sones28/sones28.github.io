@@ -1,6 +1,6 @@
 # Sanjay Maharjan Portfolio
 
-A one-page personal portfolio website with sections for current work, about, skills, GitHub, and contact.
+A one-page personal portfolio website with sections for current work, about, skills, current learning, GitHub, and contact.
 
 Open `index.html` in a browser to view it.
 
@@ -10,6 +10,7 @@ Open `index.html` in a browser to view it.
 - Your GitHub profile link is set to `https://github.com/Sones28`.
 - Your live website link is set to `https://sones28.github.io/`.
 - Add more real project titles and descriptions in the Work section when you have them.
+- Update the Currently Learning section as your next goals change.
 - Replace `assets/portfolio-hero.png` with your own photo or workspace image when you have one.
 
 ## Upload To GitHub Pages
