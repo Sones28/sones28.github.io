@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Sanjay's personal portfolio showcasing selected projects, skills, and contact details."
+    >
+    <title>Sanjay | Portfolio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/portfolio-hero.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-contact-email="sanjaymaharjan555@gmail.com">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Sanjay portfolio home">Sanjay</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/portfolio-hero.png" alt="">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Personal Portfolio</p>
+          <h1 id="hero-title">Sanjay</h1>
+          <p class="hero-copy">Product-minded builder creating thoughtful digital experiences from idea to launch.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">View Work</a>
+            <a class="button button-secondary contact-link" href="mailto:sanjaymaharjan555@gmail.com">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-section" aria-label="Portfolio focus">
+        <p>
+          I shape ideas into clear, useful products with strong storytelling, clean interfaces,
+          and practical execution.
+        </p>
+        <div class="intro-stats" aria-label="Portfolio highlights">
+          <span><strong>3</strong> Featured projects</span>
+          <span><strong>8</strong> Core skills</span>
+          <span><strong>1</strong> Simple way to connect</span>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects With Purpose</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-visual visual-teal" aria-hidden="true">
+              <span>01</span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Web App</p>
+              <h3>Client Dashboard</h3>
+              <p>
+                A focused dashboard concept for tracking updates, priorities, and project health in one place.
+              </p>
+              <a href="#contact" aria-label="Ask about Client Dashboard">Discuss this project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-coral" aria-hidden="true">
+              <span>02</span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Website</p>
+              <h3>Local Business Site</h3>
+              <p>
+                A polished service website designed to make the offer easy to understand and quick to act on.
+              </p>
+              <a href="#contact" aria-label="Ask about Local Business Site">Discuss this project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-yellow" aria-hidden="true">
+              <span>03</span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Automation</p>
+              <h3>Workflow Toolkit</h3>
+              <p>
+                A practical set of helpers for reducing repetitive tasks and keeping small teams moving.
+              </p>
+              <a href="#contact" aria-label="Ask about Workflow Toolkit">Discuss this project</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section" id="about">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Clear Thinking, Careful Making</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I like building work that feels calm, useful, and easy to trust. My process starts by understanding the
+            goal, then turning it into a simple experience people can actually use.
+          </p>
+          <p>
+            This portfolio is ready for your real story: replace these paragraphs with your background, interests,
+            achievements, and the type of work you want to be known for.
+          </p>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>What I Bring</h2>
+        </div>
+        <ul class="skill-list" aria-label="Skills">
+          <li>Web Design</li>
+          <li>Frontend Development</li>
+          <li>Product Thinking</li>
+          <li>Research</li>
+          <li>Brand Systems</li>
+          <li>Automation</li>
+          <li>Writing</li>
+          <li>Launch Support</li>
+        </ul>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s Build Something Useful</h2>
+          <p>
+            Share a few details and your email app will open with a ready-to-send message.
+          </p>
+          <a class="contact-email contact-link" href="mailto:sanjaymaharjan555@gmail.com">sanjaymaharjan555@gmail.com</a>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" placeholder="Your name">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" placeholder="you@example.com">
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell me what you want to create"></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Sanjay. Built with care.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
